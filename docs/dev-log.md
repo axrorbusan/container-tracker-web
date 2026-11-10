@@ -9,3 +9,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-07: note: vite.config.ts could proxy /api to the backend in dev so the client can use relative URLs and avoid CORS setup.
 - 2026-11-08: note: the container list view could persist its search/filter text in the URL query string so a filtered view can be bookmarked or shared.
 - 2026-11-09: note: package.json could add a "typecheck" script (tsc -b --noEmit) so type errors can be checked in CI separately from the Vite build.
+- 2026-11-10: note: ContainerDetail's load() could ignore stale responses (cancel flag in the effect) so a slow request for a previous container number can't overwrite the current one.
