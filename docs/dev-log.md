@@ -12,3 +12,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-10: note: ContainerDetail's load() could ignore stale responses (cancel flag in the effect) so a slow request for a previous container number can't overwrite the current one.
 - 2026-11-11: note: the README could list the available npm scripts (dev, build, preview) in a short table so new contributors find them quickly.
 - 2026-11-12: note: the Login form could disable its submit button while the request is in flight to prevent duplicate login attempts on double-click.
+- 2026-11-13: note: Chat.tsx could auto-scroll the message list to the newest message whenever a reply arrives, so long conversations don't leave the latest answer off-screen.
