@@ -13,3 +13,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-11: note: the README could list the available npm scripts (dev, build, preview) in a short table so new contributors find them quickly.
 - 2026-11-12: note: the Login form could disable its submit button while the request is in flight to prevent duplicate login attempts on double-click.
 - 2026-11-13: note: Chat.tsx could auto-scroll the message list to the newest message whenever a reply arrives, so long conversations don't leave the latest answer off-screen.
+- 2026-11-14: note: ContainerList could debounce its search/filter input (about 250 ms) so each keystroke doesn't trigger a re-render or a new API request.
