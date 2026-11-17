@@ -16,3 +16,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-14: note: ContainerList could debounce its search/filter input (about 250 ms) so each keystroke doesn't trigger a re-render or a new API request.
 - 2026-11-15: note: api client calls could share one typed helper that parses error bodies, so components show the server's message instead of a generic failure.
 - 2026-11-16: note: a small unit test could cover the container status badge mapping (status string to label/color) so new statuses added later don't silently fall back to the default style.
+- 2026-11-17: note: the dev server proxy target in vite.config.ts could read from an env variable (e.g. VITE_API_URL) with a localhost default, so switching between local and deployed backends needs no code edit.
