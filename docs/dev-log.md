@@ -17,3 +17,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-15: note: api client calls could share one typed helper that parses error bodies, so components show the server's message instead of a generic failure.
 - 2026-11-16: note: a small unit test could cover the container status badge mapping (status string to label/color) so new statuses added later don't silently fall back to the default style.
 - 2026-11-17: note: the dev server proxy target in vite.config.ts could read from an env variable (e.g. VITE_API_URL) with a localhost default, so switching between local and deployed backends needs no code edit.
+- 2026-11-18: note: Login.tsx could clear the stored auth token and redirect to the login view when any API call returns 401, so an expired session doesn't leave the UI stuck on a failing request.
