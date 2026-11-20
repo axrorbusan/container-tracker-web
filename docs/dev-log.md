@@ -19,3 +19,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-17: note: the dev server proxy target in vite.config.ts could read from an env variable (e.g. VITE_API_URL) with a localhost default, so switching between local and deployed backends needs no code edit.
 - 2026-11-18: note: Login.tsx could clear the stored auth token and redirect to the login view when any API call returns 401, so an expired session doesn't leave the UI stuck on a failing request.
 - 2026-11-19: note: the container list could show an empty-state message (e.g. "No containers match your search") when filtering returns zero rows, instead of rendering a blank table.
+- 2026-11-20: note: ContainerDetail.tsx could show a loading indicator while the container fetch is pending, so the page doesn't flash empty before data arrives.
