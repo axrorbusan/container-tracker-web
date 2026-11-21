@@ -20,3 +20,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-18: note: Login.tsx could clear the stored auth token and redirect to the login view when any API call returns 401, so an expired session doesn't leave the UI stuck on a failing request.
 - 2026-11-19: note: the container list could show an empty-state message (e.g. "No containers match your search") when filtering returns zero rows, instead of rendering a blank table.
 - 2026-11-20: note: ContainerDetail.tsx could show a loading indicator while the container fetch is pending, so the page doesn't flash empty before data arrives.
+- 2026-11-21: note: api.ts could attach a request timeout (e.g. AbortController with a 15s limit) to its fetch wrapper, so a hung backend surfaces as a clear error message instead of an endless spinner.
