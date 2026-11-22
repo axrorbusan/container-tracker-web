@@ -21,3 +21,4 @@ Small daily notes on the container-tracker web client.
 - 2026-11-19: note: the container list could show an empty-state message (e.g. "No containers match your search") when filtering returns zero rows, instead of rendering a blank table.
 - 2026-11-20: note: ContainerDetail.tsx could show a loading indicator while the container fetch is pending, so the page doesn't flash empty before data arrives.
 - 2026-11-21: note: api.ts could attach a request timeout (e.g. AbortController with a 15s limit) to its fetch wrapper, so a hung backend surfaces as a clear error message instead of an endless spinner.
+- 2026-11-22: note: the tsconfig files could enable "noUncheckedIndexedAccess" so array lookups by index (e.g. containers[0]) are typed as possibly undefined and missing-data bugs surface at compile time.
